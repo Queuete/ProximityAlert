@@ -29,11 +29,11 @@ namespace Proximity
             ingameState = GameController.Game.IngameState;
             soundController = GameController.SoundController;
             windowArea = GameController.Window.GetWindowRectangle();
-            Graphics.InitImage(Path.Combine(DirectoryFullName, "textures\\Direction-Arrow.png").Replace('\\', '/'), false);
-            Graphics.InitImage(Path.Combine(DirectoryFullName, "textures\\back.png").Replace('\\', '/'), false);
-            soundDir = Path.Combine(DirectoryFullName, "sounds\\").Replace('\\', '/');
-            PathDict = LoadConfig(Path.Combine(DirectoryFullName, "PathAlerts.txt"));
-            ModDict = LoadConfig(Path.Combine(DirectoryFullName, "ModAlerts.txt"));
+            Graphics.InitImage(Path.Combine(DirectoryFullName, "textures", "Direction-Arrow.png"));
+            Graphics.InitImage(Path.Combine(DirectoryFullName, "textures", "back.png"));
+            soundDir = Path.Combine(DirectoryFullName, "sounds");
+            PathDict = LoadConfig(Path.Combine(DirectoryFullName, "config", "PathAlerts.txt"));
+            ModDict = LoadConfig(Path.Combine(DirectoryFullName, "config", "ModAlerts.txt"));
             return true;
         }
 
