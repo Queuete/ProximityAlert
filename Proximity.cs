@@ -29,8 +29,8 @@ namespace Proximity
             ingameState = GameController.Game.IngameState;
             soundController = GameController.SoundController;
             windowArea = GameController.Window.GetWindowRectangle();
-            Graphics.InitImage(Path.Combine(DirectoryFullName, "textures", "Direction-Arrow.png"));
-            Graphics.InitImage(Path.Combine(DirectoryFullName, "textures", "back.png"));
+            Graphics.InitImage(Path.Combine(DirectoryFullName, "textures", "Direction-Arrow.png"), false);
+            Graphics.InitImage(Path.Combine(DirectoryFullName, "textures", "back.png"), false);
             soundDir = Path.Combine(DirectoryFullName, "sounds");
             PathDict = LoadConfig(Path.Combine(DirectoryFullName, "config", "PathAlerts.txt"));
             ModDict = LoadConfig(Path.Combine(DirectoryFullName, "config", "ModAlerts.txt"));
